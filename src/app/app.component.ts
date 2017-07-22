@@ -73,9 +73,8 @@ export class AppComponent {
                   // headers are automatically repeated if the table spans over multiple pages
                   // you can declare how many rows should be treated as headers
                   headerRows: 1,
-
                   body: [
-                    [ { text: 'PARÁMETRO A EVALUAR', width: '50%', bold: true }, { text: 'RESULTADO', width: '50%', bold: true }],
+                    [ { text: 'PARÁMETRO A EVALUAR', bold: true }, { text: 'RESULTADO', bold: true }],
                     [ {text:['1. PORCENTAJE DE RIESGOS SIGNIFICATIVOS IDENTIFICADOS (%) ',{ text: '\n(Numero de riesgos identificados como significativos/ Numero de riesgos totales identificados )*100.', style: 'small' }]}, this.model.porcentajeRiesgos],
                     [ {text:['2. PORCENTAJE DE RIESGOS MINIMIZADOS (%)  ',{ text: '\n((Número de riesgos significativos identificados en el año anterior - Número de riesgos significativos identificados en el año en vigencia)/Número de riesgos significativos identificados en el año anterior) *100.', style: 'small' }]}, this.model.porcentajeRiesgosMinimizados],
                     [ {text:['3. PORCENTAJE DE EFECTIVIDAD DE LOS CONTROLES (%)  ',{ text: '\n(Número de controles calificados como efectivos( definido, documentado, implementado, socializado y evaluado)/Número total de controles asociados)*100.', style: 'small' }]}, this.model.porcentajeEfectividad],
@@ -85,7 +84,7 @@ export class AppComponent {
                     [ '6. RIESGOS QUE SE MANTIENEN', this.model.riesgoMantiene],
                     [ '7. MEJORAS A INCORPORAR (CONTROLES/ACCIONES)', this.model.mejorasIncorporar],
                     [ '8. NUEVOS RIESGOS IDENTIFICADOS', this.model.nuevosRiesgos],
-                    [ 'Elaborado por:\n'+this.model.elaboradoPor, 'Revisado y Aprobado por:\n']
+                    [ 'Elaborado por:\n'+this.model.elaboradoPor, 'Revisado y Aprobado por:\n\n\n\n']
                   ]
                 }
               }
