@@ -77,9 +77,9 @@ export class AppComponent {
                   body: [
                     [ { text: 'PARÁMETRO A EVALUAR', width: '50%', bold: true }, { text: 'RESULTADO', width: '50%', bold: true }],
                     [ {text:['1. PORCENTAJE DE RIESGOS SIGNIFICATIVOS IDENTIFICADOS (%) ',{ text: '\n(Numero de riesgos identificados como significativos/ Numero de riesgos totales identificados )*100.', style: 'small' }]}, this.model.porcentajeRiesgos],
-                    [ {text:['2. PORCENTAJE DE RIESGOS MINIMIZADOS (%)  ',{ text: '\n((Número de riesgos significativos identificados en el año anterior - Número de riesgos significativos identificados en el año en vigencia)/Número de riesgos significativos identificados en el año anterior) *100.', style: 'small' }]}, this.model.porcentajeRiesgos],
+                    [ {text:['2. PORCENTAJE DE RIESGOS MINIMIZADOS (%)  ',{ text: '\n((Número de riesgos significativos identificados en el año anterior - Número de riesgos significativos identificados en el año en vigencia)/Número de riesgos significativos identificados en el año anterior) *100.', style: 'small' }]}, this.model.porcentajeRiesgosMinimizados],
                     [ {text:['3. PORCENTAJE DE EFECTIVIDAD DE LOS CONTROLES (%)  ',{ text: '\n(Número de controles calificados como efectivos( definido, documentado, implementado, socializado y evaluado)/Número total de controles asociados)*100.', style: 'small' }]}, this.model.porcentajeEfectividad],
-                    [ {text:['4. PORCENTAJE DE EJECUCIÓN DE PLANES DE TRATAMIENTO (%)  ',{ text: '\n(Número de acciones ejecutadas/Numero de acciones establecidas)*100.', style: 'small' }]}, this.model.riesgoMaterializado],
+                    [ {text:['4. PORCENTAJE DE EJECUCIÓN DE PLANES DE TRATAMIENTO (%)  ',{ text: '\n(Número de acciones ejecutadas/Numero de acciones establecidas)*100.', style: 'small' }]}, this.model.porcentajeEjecucion],
                     [ '5. RIESGO MATERIALIZADO', this.model.riesgoMaterializado],
                     [ '5.1 ACCIÓN CORRECTIVA APLICADA', this.model.accionCorrectiva],
                     [ '6. RIESGOS QUE SE MANTIENEN', this.model.riesgoMantiene],
