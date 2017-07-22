@@ -4,6 +4,7 @@ export class Data {
     public id: number,
     public vigencia: string,
     public porcentajeRiesgos: string,
+    public porcentajeRiesgosMinimizados: string,
     public porcentajeEfectividad: string,
     public porcentajeEjecucion: string,
     public riesgoMaterializado: string,

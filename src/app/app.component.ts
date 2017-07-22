@@ -11,7 +11,7 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
 })
 export class AppComponent {
 
-    model = new Data(1, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');
+    model = new Data(1, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');
 
     submitted = false;
 
@@ -21,7 +21,7 @@ export class AppComponent {
     }
 
     newData() {
-      this.model = new Data(42, '', '', '', '', '', '', '', '', '', '');
+      this.model = new Data(42, '', '', '', '', '', '', '', '', '', '', '');
     }
 
     createPdf(data : Data){
