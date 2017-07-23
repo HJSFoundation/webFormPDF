@@ -8,142 +8,160 @@
       SEDE BOGOTA
     </h1>
     <form (ngSubmit)="onSubmit()" #dataForm="ngForm">
-      <h4 style="text-align:center">
-          INFORME EVALUACIÓN DE LA GESTIÓN DEL RIESGO
-      </h4>
-      <div class="form-group">
-        <label for="name">vigencia</label>
-        <input type="text" class="form-control" id="vigencia"
-               required
-               [(ngModel)]="model.vigencia" name="vigencia"
-               #vigencia="ngModel">
-        <div [hidden]="vigencia.valid || vigencia.pristine"
-             class="alert alert-danger">
-          required
-        </div>
-      </div>
+      <div class="panel panel-default" style= "margin: 2%">
+        <h3 style="text-align:center">
+            INFORME EVALUACIÓN DE LA GESTIÓN DEL RIESGO <br><br>
+        </h3>
 
-      <div class="form-group">
-        <label for="name">porcentajeRiesgos</label>
-        <input type="text" class="form-control" id="porcentajeRiesgos"
-               required
-               [(ngModel)]="model.porcentajeRiesgos" name="porcentajeRiesgos"
-               #porcentajeRiesgos="ngModel">
-        <div [hidden]="porcentajeRiesgos.valid || porcentajeRiesgos.pristine"
-             class="alert alert-danger">
-          required
-        </div>
-      </div>
+        <div class="form-inline " role="form">
+            <div data-wrapper-for="Grid2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p>
+                            <label for="ejemplo_password_1">MACROPROCESO-PROCESO:</label><br>
+                              Gestión del Talento Humano
+                        </p>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="name">VIGENCIA:</label><br>
+                        <input type="text" class="form-control" id="vigencia"
+                               required
+                               [(ngModel)]="model.vigencia" name="vigencia"
+                               #vigencia="ngModel">
+                        <div [hidden]="vigencia.valid || vigencia.pristine"
+                             class="alert alert-danger">
+                          required
+                        </div>
 
-      <div class="form-group">
-        <label for="name">porcentajeRiesgosMinimizados</label>
-        <input type="text" class="form-control" id="porcentajeRiesgosMinimizados"
-               required
-               [(ngModel)]="model.porcentajeRiesgosMinimizados" name="porcentajeRiesgosMinimizados"
-               #porcentajeRiesgosMinimizados="ngModel">
-        <div [hidden]="porcentajeRiesgosMinimizados.valid || porcentajeRiesgosMinimizados.pristine"
-             class="alert alert-danger">
-          required
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">porcentajeEfectividad</label>
-        <input type="text" class="form-control" id="porcentajeEfectividad"
-               required
-               [(ngModel)]="model.porcentajeEfectividad" name="porcentajeEfectividad"
-               #porcentajeEfectividad="ngModel">
-        <div [hidden]="porcentajeEfectividad.valid || porcentajeEfectividad.pristine"
-             class="alert alert-danger">
-          required
-        </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">porcentajeEjecucion</label>
-        <input type="text" class="form-control" id="porcentajeEjecucion"
-               required
-               [(ngModel)]="model.porcentajeEjecucion" name="porcentajeEjecucion"
-               #porcentajeEjecucion="ngModel">
-        <div [hidden]="porcentajeEjecucion.valid || porcentajeEjecucion.pristine"
-             class="alert alert-danger">
-          required
-        </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">riesgoMaterializado</label>
-        <input type="text" class="form-control" id="riesgoMaterializado"
-               required
-               [(ngModel)]="model.riesgoMaterializado" name="riesgoMaterializado"
-               #riesgoMaterializado="ngModel">
-        <div [hidden]="riesgoMaterializado.valid || riesgoMaterializado.pristine"
-             class="alert alert-danger">
-          required
+        <div class="form-group">
+          <label for="name">porcentajeRiesgos</label>
+          <input type="text" class="form-control" id="porcentajeRiesgos"
+                 required
+                 [(ngModel)]="model.porcentajeRiesgos" name="porcentajeRiesgos"
+                 #porcentajeRiesgos="ngModel">
+          <div [hidden]="porcentajeRiesgos.valid || porcentajeRiesgos.pristine"
+               class="alert alert-danger">
+            required
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">accionCorrectiva</label>
-        <input type="text" class="form-control" id="accionCorrectiva"
-               required
-               [(ngModel)]="model.accionCorrectiva" name="accionCorrectiva"
-               #accionCorrectiva="ngModel">
-        <div [hidden]="accionCorrectiva.valid || accionCorrectiva.pristine"
-             class="alert alert-danger">
-          required
+        <div class="form-group">
+          <label for="name">porcentajeRiesgosMinimizados</label>
+          <input type="text" class="form-control" id="porcentajeRiesgosMinimizados"
+                 required
+                 [(ngModel)]="model.porcentajeRiesgosMinimizados" name="porcentajeRiesgosMinimizados"
+                 #porcentajeRiesgosMinimizados="ngModel">
+          <div [hidden]="porcentajeRiesgosMinimizados.valid || porcentajeRiesgosMinimizados.pristine"
+               class="alert alert-danger">
+            required
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">riesgoMantiene</label>
-        <input type="text" class="form-control" id="riesgoMantiene"
-               required
-               [(ngModel)]="model.riesgoMantiene" name="riesgoMantiene"
-               #riesgoMantiene="ngModel">
-        <div [hidden]="riesgoMantiene.valid || riesgoMantiene.pristine"
-             class="alert alert-danger">
-          required
+        <div class="form-group">
+          <label for="name">porcentajeEfectividad</label>
+          <input type="text" class="form-control" id="porcentajeEfectividad"
+                 required
+                 [(ngModel)]="model.porcentajeEfectividad" name="porcentajeEfectividad"
+                 #porcentajeEfectividad="ngModel">
+          <div [hidden]="porcentajeEfectividad.valid || porcentajeEfectividad.pristine"
+               class="alert alert-danger">
+            required
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">mejorasIncorporar</label>
-        <input type="text" class="form-control" id="mejorasIncorporar"
-               required
-               [(ngModel)]="model.mejorasIncorporar" name="mejorasIncorporar"
-               #mejorasIncorporar="ngModel">
-        <div [hidden]="mejorasIncorporar.valid || mejorasIncorporar.pristine"
-             class="alert alert-danger">
-          required
+        <div class="form-group">
+          <label for="name">porcentajeEjecucion</label>
+          <input type="text" class="form-control" id="porcentajeEjecucion"
+                 required
+                 [(ngModel)]="model.porcentajeEjecucion" name="porcentajeEjecucion"
+                 #porcentajeEjecucion="ngModel">
+          <div [hidden]="porcentajeEjecucion.valid || porcentajeEjecucion.pristine"
+               class="alert alert-danger">
+            required
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">nuevosRiesgos</label>
-        <input type="text" class="form-control" id="nuevosRiesgos"
-               required
-               [(ngModel)]="model.nuevosRiesgos" name="nuevosRiesgos"
-               #nuevosRiesgos="ngModel">
-        <div [hidden]="nuevosRiesgos.valid || nuevosRiesgos.pristine"
-             class="alert alert-danger">
-          required
+        <div class="form-group">
+          <label for="name">riesgoMaterializado</label>
+          <input type="text" class="form-control" id="riesgoMaterializado"
+                 required
+                 [(ngModel)]="model.riesgoMaterializado" name="riesgoMaterializado"
+                 #riesgoMaterializado="ngModel">
+          <div [hidden]="riesgoMaterializado.valid || riesgoMaterializado.pristine"
+               class="alert alert-danger">
+            required
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="name">elaboradoPor</label>
-        <input type="text" class="form-control" id="elaboradoPor"
-               required
-               [(ngModel)]="model.elaboradoPor" name="elaboradoPor"
-               #elaboradoPor="ngModel">
-        <div [hidden]="elaboradoPor.valid || elaboradoPor.pristine"
-             class="alert alert-danger">
-          required
+        <div class="form-group">
+          <label for="name">accionCorrectiva</label>
+          <input type="text" class="form-control" id="accionCorrectiva"
+                 required
+                 [(ngModel)]="model.accionCorrectiva" name="accionCorrectiva"
+                 #accionCorrectiva="ngModel">
+          <div [hidden]="accionCorrectiva.valid || accionCorrectiva.pristine"
+               class="alert alert-danger">
+            required
+          </div>
         </div>
-      </div>
-      <button type="submit" class="btn btn-success" [disabled]="!dataForm.form.valid">Submit</button>
-      <button type="button" class="btn btn-default" (click)="newData(); dataForm.reset()">New data</button>
+
+        <div class="form-group">
+          <label for="name">riesgoMantiene</label>
+          <input type="text" class="form-control" id="riesgoMantiene"
+                 required
+                 [(ngModel)]="model.riesgoMantiene" name="riesgoMantiene"
+                 #riesgoMantiene="ngModel">
+          <div [hidden]="riesgoMantiene.valid || riesgoMantiene.pristine"
+               class="alert alert-danger">
+            required
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">mejorasIncorporar</label>
+          <input type="text" class="form-control" id="mejorasIncorporar"
+                 required
+                 [(ngModel)]="model.mejorasIncorporar" name="mejorasIncorporar"
+                 #mejorasIncorporar="ngModel">
+          <div [hidden]="mejorasIncorporar.valid || mejorasIncorporar.pristine"
+               class="alert alert-danger">
+            required
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">nuevosRiesgos</label>
+          <input type="text" class="form-control" id="nuevosRiesgos"
+                 required
+                 [(ngModel)]="model.nuevosRiesgos" name="nuevosRiesgos"
+                 #nuevosRiesgos="ngModel">
+          <div [hidden]="nuevosRiesgos.valid || nuevosRiesgos.pristine"
+               class="alert alert-danger">
+            required
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">elaboradoPor</label>
+          <input type="text" class="form-control" id="elaboradoPor"
+                 required
+                 [(ngModel)]="model.elaboradoPor" name="elaboradoPor"
+                 #elaboradoPor="ngModel">
+          <div [hidden]="elaboradoPor.valid || elaboradoPor.pristine"
+               class="alert alert-danger">
+            required
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!dataForm.form.valid">Submit</button>
+        <button type="button" class="btn btn-default" (click)="newData(); dataForm.reset()">New data</button>
+      </div>  
     </form>
   </div>
 
